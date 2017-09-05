@@ -1,0 +1,276 @@
+\documentclass[12pt,a4paper]{article}
+
+\usepackage{url}              % Pour citer les adresses web
+\usepackage[T1]{fontenc}      % Encodage des accents
+\usepackage[utf8]{inputenc}   % Lui aussi
+\usepackage[frenchb]{babel}   % Pour la traduction française
+\usepackage{numprint}         % Histoire que les chiffres soient bien
+\usepackage{geometry}
+\usepackage{fontspec}
+%\setlength\parindent{0pt}    % Décommenter pour supprimer les alinéas
+\usepackage{mdframed}         % Requis pour le package \newmdenv
+
+\usepackage{scrextend} 		    % Pour la liste des pièces du bordereau
+
+% Pour que les n° de page s'affichent sous forme X sur X:
+\usepackage{lastpage}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\renewcommand{\headrulewidth}{0pt}  % Retire la barre du haut qui apparaît avec fancyhdr
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% TRAIT À GAUCHE DU TEXTE POUR RÉPONSE AUX CONCLUSIONS ADVERSES
+%% \begin{siderules}  réponse brillante aux moyens adverses \end{siderules}
+\newmdenv[                                                                                                                          topline=false,
+bottomline=false,
+rightline=false,
+skipabove=\topsep,
+skipbelow=\topsep,
+leftmargin=-12pt,
+rightmargin=-10pt,
+innertopmargin=0pt,
+innerbottommargin=0pt
+]{siderules}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{lipsum}          % Pour générer du texte de remplissage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% POUR SPÉCIFIER LES MARGES D'UN PARAGRAPHE À LA VOLÉE
+%% \begin{changemargin}{x.x cm}{}  _texte_  \end{changemargin}{}{}
+\newenvironment{changemargin}[2]{%
+\begin{list}{}{%
+\setlength{\topsep}{0pt}%
+\setlength{\leftmargin}{#1}%
+\setlength{\rightmargin}{#2}%
+\setlength{\listparindent}{\parindent}%
+\setlength{\itemindent}{\parindent}%
+\setlength{\parsep}{\parskip}
+}%
+\item[]}{\end{list}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\cfoot{\thepage\ de~\pageref{LastPage}}
+
+\title{}
+\author{}
+\date{}
+
+\begin{document}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%  PREMIÈRE PAGE                            %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\setlength{\parindent}{0cm}   % Supression des alinéas sur la première page, s'ils sont actifs (ligne 10) (cf. ligne 101)
+
+\begin{center}
+\huge{\textbf{ASSIGNATION} \\\large{\textsc{devant le tribunal de grande instance de Paris}}}
+\line(1,0){400}
+\end{center}
+
+\vspace{0.5cm}
+
+Le 30 mars 2017,\\\\
+À LA DEMANDE DE:\\\\
+\textbf{M. DUPONT Laurent}, né à Nantes le 1\textsuperscript{er}, exerçant la profession d'architecte, de nationalité française, demeurant au 23 avenue du Général de Gaulle, Nantes 44000.\\\\
+
+Ayant pour avocat : \textbf{Maître Alain Randon}
+\begin{changemargin}{3.7cm}{0.5cm}     % 3.7 si font=12pt ; 
+Avocat au barreau de Paris,\\5 rue des Bons-Enfants -- 75001 Paris,\\Tél. : 01.76.37.99.65\\ Toque : B 042\\
+\end{changemargin}
+
+J'AI
+
+\begin{center}
+\large{\textbf{DONNÉ ASSIGNATION À}}
+\end{center}
+
+La \textbf{Société Procloud} (également appelée ci-après \og \textbf{le Défenseur}  \fg{} ou \og \textbf{le Prestataire} \fg{}), société de droit américain dont le siège social est situé au 1 Hacker Way, Menlo Park, CA 94025, aux États-Unis, représentée par son représentant légal en France, \textbf{Procloud France}, situé au 6 rue Menars 75002 Paris.\\
+
+\textbf{À COMPARAÎTRE :}
+
+\begin{center}
+\textbf{le 30 mars 2017 à 23H00}
+\end{center}
+
+devant le tribunal de grande instance de Paris, 1 quai de la Corse, 75004 Paris, France.
+
+\setlength{\parindent}{15pt}       % Voir ligne 68
+
+\pagebreak
+
+ET L'INFORME\\
+
+\textit{Qu'un procès lui est intenté pour les raisons ci-après exposées.}
+
+\textit{Que dans un délai de quinze jours, à compter de la date du présent acte, conformément aux articles 56, 752 et 755 du Code de procédure civile, il est tenu de constituer avocat pour être représenté devant ce tribunal.}
+
+\textit{Qu'à défaut il s'expose à ce qu'un jugement soit rendu contre lui sur les seuls éléments fournis par son adversaire.}
+
+\textit{Les pièces sur lesquelles la demande est fondée sont indiquées et jointes en fin d'acte selon bordereau.\\}
+
+Il est par ailleurs rappelé au défendeur les articles suivants ci-après reproduits:\\\\
+\noindent{
+\textbf{Article 641 du Code de procédure civile}: \og Lorsqu'un délai est exprimé en jours, celui de l'acte, de l’événement, de la décision ou de la notification qui le fait courir, ne compte pas.\\
+Lorsqu'un délai est exprimé en mois ou en années, ce délai exprime le jour du dernier mois ou de la dernière année qui porte le même quantième que le jour de l'acte, de l'événement, de la décision ou de la notification qui fait courir le délai. À défaut d'un quantième identique, le délai exprime le dernier jour du mois.\\
+Lorsqu'un délai est exprimé en mois et en jours, les mois sont d'abord décomptés puis les jours. \fg{} 
+}\\
+
+\noindent{\textbf{Article 642 du Code de procédure civile}: \og Tout délai expire le dernier jour à ving-quatre heures.\\ Le délai qui expirerait normalement un samedi, un dimanche ou un jour férié ou chômé, est prorogé jusqu'au premier jour ouvrable suivant. \fg{}}\\
+
+\noindent{\textbf{Article 642-1 du Code de procédure civile}: \og Les dispositions des articles 640 à 642 sont également applicables aux délais dans lesquels les inscriptions et autres formalités de publicité doivent être opérées. \fg{}}\\
+
+\noindent{\textbf{Article 643 du Code de procédure civile}: \og Lorsque la demande est portée devant une juridiction qui a son siège en France métropolitaine, les délais de comparution, d'appel, d'opposition, de recours en révision et de pourvoi en cassation sont augmentés de: \begin{itemize}
+\item 1° - un mois pour les personnes qui demeurent dans un département d'outre-mer ou dans un territoire d'outre-mer:
+\item 2° - deux mois pour celles qui demeurent à l'étranger.\fg{}\end{itemize}}
+
+
+\pagebreak
+
+\begin{center}
+\Large{\textbf{OBJET DE LA DEMANDE}}
+\end{center}
+
+% Éventuellement une ou deux phrases introductives
+
+\vspace{05mm}
+
+\begin{changemargin}{0.1cm}{0.1cm}
+\textbf{\large{I. \underline{RAPPEL DES FAITS}}}
+\end{changemargin}
+\vspace{05mm}
+
+L'exposé des faits est bref, objectif et documenté (référence aux pièces). Il faut aussi mentionner la mise en demeure ainsi que les diligences entreprises pour parvenir à une issue amiable du litige.\\
+
+\lipsum[4]
+
+\vspace{08mm}
+
+\begin{changemargin}{0.1cm}{0.1cm}
+\textbf{\large{II. \underline{DISCUSSION}}}
+\end{changemargin}
+\vspace{05mm}
+
+Comme il sera démontré, le Prestataire a gravement manqué à plusieurs de ses obligations contractuelles (\textbf{A}). Celles-ci ont été les causes directes et immédiates (\textbf{B}) des importants dommages subis par l'Opérateur (\textbf{C}). Celui-ci est donc fondé à solliciter la résolution du contrat ainsi que l'allocation de dommages et intérêts en réparation de son préjudice (\textbf{D}).
+\vspace{08mm}
+
+\begin{changemargin}{1cm}{0.1cm}
+\noindent{\textbf{\large{A -- L'existence d'inexécutions fautives des obligations incombant à Procloud}}}
+\end{changemargin}
+\vspace{05mm}
+
+\lipsum[3]
+
+\vspace{08mm}
+
+\underline{Or en l'espèce,}\\
+
+\lipsum[2]
+\vspace{05mm}
+
+\begin{changemargin}{1cm}{0.1cm}
+\noindent{\textbf{\large{B -- Des inexécutions qui ont directement et immédiatement causé un préjudice}}}
+\end{changemargin}
+\vspace{05mm}
+
+\lipsum[1-2]
+\vspace{05mm}
+
+\begin{changemargin}{1cm}{0.1cm}
+\noindent{\textbf{\large{C -- La détermination des dommages subis par Monsieur DUPONT}}}
+\end{changemargin}
+\vspace{05mm}
+
+\lipsum[3-5]
+
+\vspace{05mm}
+
+\begin{siderules}
+\lipsum[1-3]
+\end{siderules}
+
+\vspace{05mm}
+
+\begin{changemargin}{1cm}{0.1cm}
+\noindent{\textbf{\large{D -- Les demandes formulées par Monsieur Dupont}}}
+\end{changemargin}
+
+\vspace{05mm}
+
+\lipsum[3-4]
+
+\vspace{05mm}
+
+Enfin, compte tenu de ce qu'il serait inéquitable de laisser à la charge du demandeur les frais engagés dans le cadre de la présente instance, il est demandé au tribunal de condamner le défendeur à lui verser la somme de 1.500 (mille cinq cent) euros au titre de l'article 700 du Code de procédure civile ainsi qu'aux entiers dépens et d'ordonner l'exécution provisoire de la décision à intervenir.
+
+\pagebreak
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% MOTIFS                                    %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{center}
+\Large{\textbf{PAR CES MOTIFS}}
+\end{center}
+
+\vspace{1cm}
+\noindent{\textbf{Vu l'article 1\textsuperscript{er} du Code civil,\\Vu les pièces et arguments versés au débat,}}
+\vspace{0.7cm}
+
+\underline{Il est demandé au tribunal de:}
+\vspace{0.5cm}
+
+\begin{itemize}
+\setlength\itemsep{1em}
+\item \textbf{DÉCLARER} recevable et bien fondé Monsieur Laurent DUPONT en sa requête présentée au tribunal de commerce de Paris le 30 mars 2014;
+
+\vspace{0.6cm}
+
+%% AU PRINCIPAL  %%
+\textit{En conséquence,}
+\item \textbf{DÉBOUTER} la société MongoCorp de l'ensemble de ses demandes;
+\item \textbf{FIXER} le montant du préjudice matériel subi par Monsieur Laurent DUPONT à la somme de 70.425 euros;
+\item \textbf{CONDAMNER} la société MongoCorp à verser à Monsieur Laurent DUPONT la somme de 70.425 euros en deniers et quittance;
+\vspace{0.6cm}
+
+%% SUBSIDIAIREMENT %%
+\textit{Subsidiairement,}
+\item \textbf{DÉBOUTER} la société MongoCorp de l'ensemble de ses demandes;
+\vspace{0.6cm}
+
+%% EN TOUT ÉTAT DE CAUSE %%
+\textit{En tout état de cause,}
+\item \textbf{CONDAMNER} la société MongoCorp à Monsieur Laurent DUPONT la somme de 1.500 euros au titre de l'article 700 du Code de procédure civile;
+\item \textbf{ORDONNER} l'exécution provisoire de la décision à intervenir.
+\end{itemize}
+
+\vspace{1.5cm}
+
+\begin{flushright}
+\small{\textbf{SOUS TOUTES RÉSERVES}}
+\end{flushright}
+
+\pagebreak
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% BORDEREAU DE PIÈCES                       %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{center}
+\Large{\textbf{\textsc{Pièces utilisées au soutien de la présente assignation}:}}
+\end{center}
+
+\vspace{1cm}
+
+\begin{labeling}{Pièce n°7777}
+\item [\textbf{Pièce n°1}] Certificat médical établi par les U.M.J. de l'Hôtel-Dieu;
+\item [\textbf{Pièce n°2}] Courriel échangé entre Monsieur DUPONT et la société MongoCorp, du 23 mars 2017;
+\item [\textbf{Pièce n°3}] very dangerous animal, sharp teeth, long
+muscular tail and a bit of text that is longer than one
+line and shows the alignment of text quite nicely
+\end{labeling}
+
+
+\end{document}
