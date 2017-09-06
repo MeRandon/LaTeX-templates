@@ -6,8 +6,10 @@ Modèles d'actes juridiques en LaTeX.
 
 ## Questions d'ordre général
 
-### Faire (un) modèle
+### Avertissement
+Il va de soi qu'une lecture préalable des dispositions juridiques pertinentes s'impose avant d'utiliser un des modèles proposés. 
 
+### Faire (un) modèle
 
 Pour sa simplicité et sa sobriété la classe [article] me paraît recommandée et présente, en outre, l'avantage de pouvoir tenir dans un seul document .tex. 
 
