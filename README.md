@@ -2,6 +2,8 @@
 
 Modèles d'actes juridiques en LaTeX.
 
+À compiler avec XeLaTeX.
+
 ## Questions d'ordre général
 
 ### Faire (un) modèle
